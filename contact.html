@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>This is first web page</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/validation.js"></script>
+    </head>
+    <body>
+        <table width="100%" >
+        <tr>
+            <td bgcolor="#cccccc" align="center"><p class="header"><a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="shop.html">Shop</a> | <a href="contact.html">Contact Us</a></p></td>
+        </tr>
+        <tr>
+            <td height="600" valign="top">
+                <table width="100%">
+                    <tr>
+                        <td colspan="2"><h1>Contact Us</h1></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p>Hello <b>Imtiyaz</b>, How I can help you?</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+    <form name="contactUs" method="POST" action="action.php" id="contactUs" onsubmit="return validateForm()">
+
+    <div>
+        <input type="text" name="name" id="name" placeholder="Your Name">
+        <span id="nameError" class="error-message"></span>
+    </div>
+
+    <div>
+        <input type="email" name="email" id="email" placeholder="Your Email">
+        <span id="emailError" class="error-message"></span>
+    </div>
+
+    <div>
+        <input type="text" name="mobile" id="mobile" placeholder="Your Mobile">
+        <span id="mobileError" class="error-message"></span>
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><p class="footer">All rights reserved @ 2026</p></td>
+        </tr>
+        </table>
+    </body>
+</html>
